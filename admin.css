@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* للمتصفحات التي تدعم WebKit مثل Chrome و Safari */
+::-webkit-scrollbar {
+  width: 2px; /* عرض شريط التمرير */
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* لون خلفية الشريط */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main--colro); /* لون مقبض شريط التمرير */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f0a903; /* لون المقبض عند التمرير */
+}
+:root {
+  --main--colro: #ffb300;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a !important;
+  font-family: "Montserrat", serif !important;
+  color: white;
+  height: 9000px;
+}
+.circle-bar {
+  width: 30px !important;
+  height: 30px !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(255, 255, 255) !important;
+  color: red !important;
+}
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 400%);
+  text-align: center;
+  transition: 0.8s;
+  color: white;
+}
+.about,
+.Skills,
+.certificate {
+  margin-top: 200px;
+}
+.title {
+  color: var(--main--colro);
+}
+.title {
+  border-bottom: 1px solid rgba(194, 194, 194, 0.18);
+}
+.box-about p {
+  line-height: 1.7;
+}
+a {
+  text-decoration: none !important;
+}
+.card-body a {
+  background-color: var(--main--colro);
+  border: none;
+}
+.content {
+  cursor: pointer;
+}
+.top {
+  position: fixed;
+  bottom: 50px;
+  padding: 10px 15px;
+  font-size: 25px;
+  left: 30px;
+  color: black;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--main--colro);
+}
+.box-content-social {
+  background-image: url(wall-wallpaper-concrete-colored-painted-textured-concept.jpg);
+  background-size: cover;
+}
+.icons-social {
+  transform: translatex(-500px) !important;
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.3s;
+}
+.fa-arrow-right-to-bracket {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translatey(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  padding: 25px 15px;
+  background-color: var(--main--colro);
+}
+.right {
+  transform: translatex(0%) !important;
+}
+.content {
+  gap: 15px;
+}
